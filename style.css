@@ -1,0 +1,22 @@
+h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.salida{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    width: 30%;
+    height: 8rem;
+    margin: 1rem 35%;
+    border: 1px solid #000;
+
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+}
+
+.color-div{
+    text-align: center;
+    cursor: pointer;
+}
