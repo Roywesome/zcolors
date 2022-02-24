@@ -1,7 +1,9 @@
 const div = document.getElementById('salida');
 const color = document.getElementById('color');
 
-//Input
+//Events
+document.addEventListener('DOMContentLoaded', showColors());
+
 color.addEventListener('input', () => {
     const value = color.value;
     
@@ -13,7 +15,7 @@ color.addEventListener('input', () => {
     showColors();
 });
 
-//dbclick
+//Métodos
 function deleteColor(pos){
     const colors =  getColors();
     let filtrado = colors.filter((color, index) => index !== pos);
@@ -21,7 +23,6 @@ function deleteColor(pos){
     localStorage.setItem('colors', JSON.stringify(filtrado));
     showColors();
 }
-
 
 function getColors(){
     let colors;
@@ -45,7 +46,7 @@ function addColors(color){
 }
 
 
-showColors();
+
 
 function showColors(){
     const colors = getColors();
